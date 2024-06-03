@@ -1,0 +1,206 @@
+:root {
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+
+@media (min-width: 1025px) and (max-width: 1600px) { /* Desktop */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(../images/bg-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: var(--Violet);
+    }
+
+    .ladding-page {
+        display: flex;
+        flex-direction: row;
+        margin: 40px;
+    }
+    
+    .info {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 65%;
+        align-items: flex-start;
+        transform: translateY(40px);
+        margin: 0 50px;
+        transition: transform 1s ease-in-out;
+    }
+    
+    .info h1 {
+        width: 60%;
+        font-family: 'Poppins';
+    }
+
+    .info p {
+        width: 75%;
+        transform: translateY(-30px);
+        font-family: 'Open Sans';
+        opacity: 70%;
+    }
+
+    body .icons-social {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(70px);
+        padding: 50px;
+        display: flex;
+        gap: 10px;
+        height: 10%;
+        width: 10%;
+        transition: transform 1s ease-in-out;
+    }
+
+    .icons-social button {
+        width: 100%;
+        height: 60%;
+        background: none;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        transition: border 0.3s ease-in-out;
+    }
+
+    .info button {
+        width: 25%;
+        height: 15%;
+        border: none;
+        border-radius: 50px;
+        background-color: #fff;
+        color: #000;
+        font-family: 'Open Sans';
+        transform: translateY(-30px);
+    } 
+}
+
+
+
+@media (min-width: 375px) and (max-width: 426px) { /* Mobile (M, G)*/
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(../images/bg-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: var(--Violet);
+    }
+    
+    .ladding-page {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    img {
+        width: 95%;
+      margin: 20px 10px 0 ;
+    }
+
+    .info {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        transform: translateY(-10px);
+        margin: 0 50px;
+        transition: transform 1s ease-in-out;
+    }
+
+    .info h1 {
+        width: 110%;
+        font-family: 'Poppins';
+        text-align: center;
+    }
+
+    .info p {
+        width: 85%;
+        transform: translateY(-30px);
+        font-family: 'Open Sans';
+        opacity: 80%;
+        text-align: center;
+    }
+
+    body .icons-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        height: 100%;
+        width: 100%;
+        transform: translateY(20px);
+    }
+
+    .icons-social button {
+        width: 35px;
+        height: 35px;
+        background: none;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        transition: border 0.3s ease-in-out;
+    }
+
+    .info button {
+        width: 64%;
+        height: 45px;
+        border: none;
+        border-radius: 50px;
+        background-color: #fff;
+        color: #000;
+        font-family: 'Open Sans';
+        transform: translateY(-30px);
+    } 
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+.info button:hover {
+    box-shadow: 0 0 7px #00000096 ;
+    transition: box-shadow 0.5s ease;
+    color: #fff;
+    background-color: var(--Soft-Magenta);
+    transition: background-color 0.5s ease;
+}
+
+
+.icons-social button:hover {
+    border: 2px solid var(--Soft-Magenta);
+   
+}
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+.attribution a {
+    color: hsl(296, 100%, 47%); 
+}
